@@ -21,7 +21,7 @@ namespace TimekeeperCookieNew
             Assembly assembly = Assembly.GetExecutingAssembly();
 
             // Format the full resource name: typically "Namespace.FolderName.FileName"
-            string resourcePath = $"{assembly.GetName().Name}.{resourceName}";
+            string resourcePath = $"TimekeeperCookieNew.{resourceName}";
 
             using (Stream stream = assembly.GetManifestResourceStream(resourcePath))
             {
